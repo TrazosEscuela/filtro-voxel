@@ -1,0 +1,402 @@
+@import url("./reset.css");
+@import url("./dev.css");
+
+/* Botones*/
+/*botones general*/
+.buttons {
+  position: relative;
+}
+
+.boton {
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+/*Fin botones general*/
+/*botones padre*/
+.button--padre {
+  justify-content: center;
+}
+
+.button__landing {
+  color: #1f1f1f;
+  cursor: pointer;
+  border: 1px solid #1f1f1f;
+  padding: 5px;
+}
+
+.button--active {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/*Fin botones padre*/
+/*botones area*/
+
+.button__landing__presencial {
+  color: #1f1f1f;
+  cursor: pointer;
+  padding: 5px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.button__landing__online {
+  color: #1f1f1f;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px;
+  position: relative;
+}
+
+.button__landing__online::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #1b1b1c;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.button__landing__presencial::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #1b1b1c;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.button__landing:hover {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.button__landing__presencial:hover {
+  color: rgb(245, 17, 17);
+}
+
+.button__landing__online:hover {
+  color: rgb(245, 17, 17);
+}
+
+.button__landing__presencial--active {
+  color: rgb(245, 17, 17);
+}
+
+.button__landing__online--active {
+  color: rgb(245, 17, 17);
+}
+
+.button__landing__presencial--active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: rgb(245, 17, 17);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.button__landing__online--active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: rgb(245, 17, 17);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.arrow__rigth__presencial {
+  display: none;
+}
+
+.arrow__left__presencial {
+  display: none;
+}
+.arrow__rigth__online {
+  display: none;
+}
+
+.arrow__left__online {
+  display: none;
+}
+
+/*Fin botones area*/
+/*Botones modalidad*/
+.button__submenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0 1rem 0;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.button__presencial__submenu__item {
+  padding: 0.2rem 0.5rem;
+  color: #787878;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.button__online__submenu__item {
+  padding: 0.2rem 0.5rem;
+  color: #787878;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.button__presencial__submenu__item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #787878;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.button__online__submenu__item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #787878;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.button__presencial__submenu__item:hover {
+  color: rgb(245, 17, 17);
+}
+
+.button__online__submenu__item:hover {
+  color: rgb(245, 17, 17);
+}
+
+.button__presencial__submenu__item--active {
+  color: rgb(245, 17, 17);
+}
+
+.button__online__submenu__item--active {
+  color: rgb(245, 17, 17);
+}
+
+.button__presencial__submenu__item--active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: rgb(245, 17, 17);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.button__online__submenu__item--active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: rgb(245, 17, 17);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+/*Fin botones modalidad*/
+/*Barra de scroll*/
+.boton::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.boton::-webkit-scrollbar:vertical {
+  width: 0px;
+}
+
+.boton::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.boton::-webkit-scrollbar:horizontal {
+  height: 0px;
+}
+
+.boton::-webkit-scrollbar-thumb {
+  background-color: rgba(20, 20, 20, 0);
+  border-radius: 0px;
+  border: none;
+}
+
+.boton::-webkit-scrollbar-track {
+  border-radius: 0px;
+}
+
+/*Fin barra de scroll*/
+
+#todos {
+  display: none;
+}
+
+/*Fin botones*/
+/*Contenedores*/
+
+.contenedor__padre {
+  display: none !important;
+}
+
+.contenedor__padre__formacion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contenedor__hijo__presencial {
+  display: none !important;
+}
+
+.contenedor__hijo__presencial--active {
+  display: flex !important;
+}
+
+.contenedor__hijo__online {
+  display: none !important;
+}
+
+.contenedor__hijo__online--active {
+  display: flex !important;
+}
+
+.contenedor__padre--active {
+  display: flex !important;
+}
+
+.sin__contenido__presencial {
+  display: none !important;
+}
+
+.sin__contenido__online {
+  display: none !important;
+}
+
+.sin__contenido--active {
+  display: flex !important;
+}
+
+.sin__contenido__presencial h3 {
+  line-height: 1 !important;
+  text-align: center;
+}
+
+.sin__contenido__online h3 {
+  line-height: 1 !important;
+  text-align: center;
+}
+
+/*Fin contenedores*/
+/*Media queries*/
+@media (max-width: 1300px) {
+  .boton {
+    justify-content: flex-start !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.2rem;
+  }
+
+  .button--padre {
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+    overflow-x: initial;
+  }
+
+  .button__submenu {
+    justify-content: flex-start;
+  }
+
+  .arrow__rigth__presencial {
+    display: inherit;
+    position: absolute;
+    bottom: -2px;
+    right: -17px;
+  }
+
+  .arrow__left__presencial {
+    display: inherit;
+    position: absolute;
+
+    bottom: -2px;
+    left: -17px;
+  }
+
+  #rigthArrowPresencial {
+    width: 10px;
+  }
+
+  #leftArrowPresencial {
+    width: 10px;
+  }
+  .arrow__rigth__online {
+    display: inherit;
+    position: absolute;
+    bottom: -2px;
+    right: -17px;
+  }
+
+  .arrow__left__online {
+    display: inherit;
+    position: absolute;
+
+    bottom: -2px;
+    left: -17px;
+  }
+
+  #rigthArrowOnline {
+    width: 10px;
+  }
+
+  #leftArrowOnline {
+    width: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .boton {
+    justify-content: flex-start !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.2rem;
+  }
+
+  .button--padre {
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+    overflow-x: initial;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+/*Fin media queries*/
