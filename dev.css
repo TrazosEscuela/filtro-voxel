@@ -11,3 +11,10 @@ body {
   max-width: 800px;
   width: 100%;
 }
+.box__style {
+  border: 2px solid #ededed !important;
+  padding: 1.5rem !important;
+}
+.contenedor__padre--active {
+  flex-direction: column;
+}
